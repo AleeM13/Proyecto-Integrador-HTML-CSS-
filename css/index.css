@@ -318,8 +318,8 @@ footer p {
         text-align: justify;
         border-radius: 2px;
         padding: 20px;
-        width: 200px;
-        height: 600px;
+        width: 250px;
+        height: 650px;
         background: #aaa;
         opacity: .9;
         left: 0;
@@ -439,7 +439,15 @@ footer p {
         font-size: .8em;
 
     }
+
+    .capa {
+        font-size: .9em;
+    }
     
+    .btn:hover > .capa {
+        transform: scale(1);
+    }
+
     .beneficios {
         display: flex;
         justify-content: center;
