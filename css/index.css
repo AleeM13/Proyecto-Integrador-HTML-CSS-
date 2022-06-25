@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bitter', serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    box-shadow: 0px 2px 7px #aaa;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 55%;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    transition: all .2s;
+}
+
+.toggle a::after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background: #ff0054;
+    transition: .2s;
+}
+
+.toggle a:hover::after{
+    width: 100%;
+}
+
+.toggle a:hover {
+    color: #ff0054;
+} 
+
+.navbar img {
+    width: 120px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.sign-menu {
+    display: none;
+}
+
+.sign {
+    width: 24%;
+}
+
+.sign ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+.sign a {
+    text-decoration: none;
+    color: #ff0054;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+.portada {
+    width: 100%;
+    height: 600px;
+    margin-top: 8px;
+}
+
+h1 {
+    display: none;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros h3 {
+    font-size: 1.9em;
+}
+
+.nosotros p {
+    font-size: 1.2em;
+    width: 95%;
+    margin: 12px 0;
+    line-height: .8cm;
+}
+
+.joyas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.joyas h3 {
+    font-size: 1.9em;
+    margin-top: 1.7em;
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 250px;
+    height: 300px;
+}
+
+.btn {
+    position: relative;
+    width: 170px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn button {
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    border: none;
+    font-size: .9em;
+    font-weight: 600;
+    transition: all .4s;
+}
+
+.capa {
+    position: absolute;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: #fff;
+    font-size: 1em;
+    font-weight: 00;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+.btn:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.1);
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 8em 0;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 1.7em;
+    margin-right: 20px;
+    color: #666;
+}
+
+.border {
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 0 30px;
+}
+
+.texto h5 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.texto p {
+    font-size: 1em;
+    color: #888;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.container-contacto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.info-contacto h3 {
+    font-size: 1.6em;
+    margin: 20px 0;
+}
+
+.info-contacto div {
+    font-size: 1.1em;
+    color: #555;
+    margin: 20px 0;
+}
+
+.info-contacto i {
+    margin-right: 10px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5em;
+}
+
+.redes i:hover {
+    transform: scale(1.2);
+}
+
+.mapa {
+    width: 55%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0px -2px 7px #aaa;
+}
+
+footer img {
+    width: 130px;
+    height: 130px;
+}
+
+footer p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+        box-shadow: 0px 2px 7px #aaa;
+    }
+
+    .lista {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .toggle {
+        position: absolute;
+        display: none;
+        text-align: justify;
+        border-radius: 2px;
+        padding: 20px;
+        width: 200px;
+        height: 600px;
+        background: #aaa;
+        opacity: .9;
+        left: 0;
+        top: 100%;
+    }
+    
+    .toggle a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+        margin: 10px 0;
+        padding: 30px 0;
+        font-size: 1.2em;
+        transition: all .2s;
+        width: 90%;
+    }
+    
+    .toggle a:hover::after{
+        width: 0;
+    }
+    
+    .toggle a:hover {
+        color: #ff0054;
+    } 
+    
+    .navbar img {
+        width: 120px;
+        height: 130px;
+        object-fit: cover;
+    }
+    
+    .sign {
+        display: none;
+    }
+
+    .sign-menu {
+        display: block;
+    }
+    
+    .sign-menu ul {
+        margin-top: 50px;
+        display: block;
+        text-decoration: none;
+        padding: 10px 0;
+        list-style: none;
+    }
+    
+    .sign-menu a {
+        text-decoration: none;
+        color: #ff0054;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 45px;
+        height: 36px;
+        padding: 5px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    
+    .menu-button span {
+        width: 35px;
+        height: 3px;
+        background: #000;
+    }
+
+    .menu-toggle:checked + .toggle {
+        display: block;
+    }
+
+    .portada {
+        height: 220px;
+    }
+
+    .nosotros h3 {
+        font-size: 1.5em;
+    }
+
+    .nosotros p {
+        font-size: 1.1em;
+    }
+
+    .joyas h3 {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
+    
+    .container {
+        margin-top: 20px;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .card img {
+        width: 110px;
+        height: 120px;
+    }
+    
+    .btn {
+        width: 110px;
+        height: 25px;
+        margin-top: 20px;
+    }
+    
+    .btn button {
+        width: 100%;
+        height: 100%;
+        font-size: .8em;
+
+    }
+    
+    .beneficios {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 3.4em 0;
+    }
+    
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .icon i {
+        font-size: 2.5em;
+        margin: 20px 0;
+    }
+    
+    .border {
+        border-left: none;
+        border-right: none;
+        padding: 0;
+    }
+    
+    .texto h5 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+    
+    .texto p {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .container-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .info-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 94%;
+    }
+    
+    .info-contacto h3 {
+        font-size: 1.8em;
+        margin: 10px 0;
+    }
+    
+    .info-contacto div {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+    
+    .redes a {
+        text-decoration: none;
+        color: #555;
+        font-size: 1.5em;
+    }
+    
+    .redes i:hover {
+        transform: scale(1.2);
+    }
+    
+    .mapa {
+        width: 94%;
+        margin-top: 30px;
+    }
+    
+    footer {
+        padding: 10px 0;
+    }
+    
+    footer img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: .9em;
+        font-weight: 400;
+        width: 70%;
+    }
+}
