@@ -236,14 +236,14 @@ h1 {
 
 .container-contacto {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
 .info-contacto {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
 }
 
 .info-contacto h3 {
@@ -272,7 +272,7 @@ h1 {
 }
 
 .mapa {
-    width: 55%;
+    width: 45%;
 }
 
 footer {
@@ -503,7 +503,7 @@ footer p {
     }
     
     .info-contacto h3 {
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin: 10px 0;
     }
     
@@ -523,7 +523,7 @@ footer p {
     }
     
     .mapa {
-        width: 94%;
+        width: 80%;
         margin-top: 30px;
     }
     
