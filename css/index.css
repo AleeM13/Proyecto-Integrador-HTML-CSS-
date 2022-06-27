@@ -317,11 +317,11 @@ footer p {
         display: none;
         text-align: justify;
         border-radius: 2px;
-        padding: 20px;
+        padding: 15px;
         width: 230px;
-        height: 100vh;
+        height: 90vh;
         background: #ddd;
-        opacity: .8;
+        opacity: .9;
         left: 0;
         top: 100%;
     }
@@ -330,8 +330,8 @@ footer p {
         display: block;
         text-decoration: none;
         color: #000;
-        margin: 10px 0;
-        padding: 30px 0;
+        margin: 0;
+        padding:  10px 0;
         font-size: 1.2em;
         transition: all .2s;
         width: 90%;
@@ -357,7 +357,6 @@ footer p {
 
     .sign-menu {
         display: block;
-        margin-top: 40px;
     }
     
     .sign-menu ul {
@@ -396,7 +395,9 @@ footer p {
     }
 
     .menu-toggle:checked + .toggle {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .portada {
