@@ -318,10 +318,10 @@ footer p {
         text-align: justify;
         border-radius: 2px;
         padding: 20px;
-        width: 250px;
-        height: 650px;
+        width: 230px;
+        height: 100vh;
         background: #ddd;
-        opacity: .9;
+        opacity: .8;
         left: 0;
         top: 100%;
     }
@@ -357,10 +357,10 @@ footer p {
 
     .sign-menu {
         display: block;
+        margin-top: 40px;
     }
     
     .sign-menu ul {
-        margin-top: 50px;
         display: block;
         text-decoration: none;
         padding: 10px 0;
@@ -515,11 +515,11 @@ footer p {
     .redes a {
         text-decoration: none;
         color: #555;
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
     
     .redes i:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     
     .mapa {

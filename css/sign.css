@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(#fff 7%, #222);
+    background: linear-gradient(#fff, #222);
     font-family: 'Bitter', serif;
     height: 100vh;
     width: 100vw;
@@ -81,7 +81,8 @@ a {
     }
 
     input {
-        width: 300px;
+        width: 90%;
+        max-width: 350px;
         height: 40px;
     }
 } 
