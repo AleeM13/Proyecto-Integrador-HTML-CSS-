@@ -6,28 +6,59 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
 body {
+    width: 100%;
     font-family: 'Bitter', serif;
 }
 
+/* Header */
 .navbar {
+    position: fixed;
+    top: 0%;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 0 15px;
     box-shadow: 0px 2px 7px #aaa;
+    z-index: 1000;
 }
 
-.menu-toggle {
-    display: none;
-}
-
-.lista {
+.navbar-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+
+.sign {
+    width: 24%;
+}
+
+.sign ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+
+.sign a {
+    text-decoration: none;
+    color: #ff0054;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* Menu Hamburguesa */
+.menu-toggle {
+    display: none;
 }
 
 .toggle {
@@ -72,34 +103,18 @@ body {
     display: none;
 }
 
-.sign {
-    width: 24%;
-}
-
-.sign ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 100%;
-}
-
-.sign a {
-    text-decoration: none;
-    color: #ff0054;
-    font-weight: 500;
-    font-size: 1.1em;
-}
-
+/* Portada-Img */
 .portada {
     width: 100%;
     height: 600px;
-    margin-top: 8px;
+    margin-top: 130px;
 }
 
 h1 {
     display: none;
 }
 
+/* Section-info */
 .nosotros {
     display: flex;
     flex-direction: column;
@@ -118,6 +133,7 @@ h1 {
     line-height: .8cm;
 }
 
+/* Section-Productos */
 .joyas {
     display: flex;
     flex-direction: column;
@@ -190,6 +206,7 @@ h1 {
     transform: scale(1.1);
 }
 
+/* Beneficios */
 .beneficios {
     display: flex;
     justify-content: space-around;
@@ -227,6 +244,7 @@ h1 {
     color: #888;
 }
 
+/* Section-Contacto */
 .contacto {
     display: flex;
     flex-direction: column;
@@ -275,6 +293,7 @@ h1 {
     width: 45%;
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -295,6 +314,7 @@ footer p {
 }
 
 @media (max-width: 800px) {
+    /* Header */
     .navbar {
         position: relative;
         display: flex;
@@ -305,13 +325,14 @@ footer p {
         box-shadow: 0px 2px 7px #aaa;
     }
 
-    .lista {
+    .navbar-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
+    /* Menu Hamburguesa */
     .toggle {
         position: absolute;
         display: none;
@@ -401,7 +422,15 @@ footer p {
     }
 
     .portada {
-        height: 220px;
+        height: 250px;
+        margin-top: 8px;
+    }
+
+    /* Section-Info */
+    .nosotros {
+        width: 100%;
+        text-align: justify;
+        padding: 15px;
     }
 
     .nosotros h3 {
@@ -412,6 +441,7 @@ footer p {
         font-size: 1.1em;
     }
 
+    /* Section-Productos */
     .joyas h3 {
         font-size: 1.5em;
         margin-top: 1.5em;
@@ -419,8 +449,8 @@ footer p {
     
     .container {
         margin-top: 20px;
-        width: 90%;
-        gap: 10px;
+        width: 100%;
+        gap: 30px;
     }
 
     .card img {
@@ -449,12 +479,13 @@ footer p {
         transform: scale(1);
     }
 
+    /* Beneficios */
     .beneficios {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 95%;
         margin: 3.4em 0;
     }
     
@@ -488,6 +519,7 @@ footer p {
         text-align: center;
     }
     
+    /* Section-Contacto */
     .container-contacto {
         display: flex;
         flex-direction: column;
@@ -500,7 +532,7 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: 94%;
+        width: 90%;
     }
     
     .info-contacto h3 {
@@ -528,8 +560,10 @@ footer p {
         margin-top: 30px;
     }
     
+    /* Footer */
     footer {
         padding: 10px 0;
+        width: 100%;
     }
     
     footer img {
