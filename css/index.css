@@ -126,6 +126,7 @@ h1 {
 
 .nosotros h3 {
     font-size: 1.9em;
+    margin-top: 30px;
 }
 
 .nosotros p {
@@ -318,7 +319,6 @@ footer p {
 @media (max-width: 800px) {
     /* Header */
     .navbar {
-        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -336,17 +336,16 @@ footer p {
 
     /* Menu Hamburguesa */
     .toggle {
-        position: absolute;
+        position: fixed;
         display: none;
         text-align: justify;
         border-radius: 0 0 5px 0;
         padding: 15px;
         width: 230px;
-        height: 90vh;
-        background: #ddd;
-        opacity: .9;
+        height: 100vh;
+        background: #eee;
         left: 0;
-        top: 100%;
+        top: 100px;
     }
     
     .toggle a {
@@ -424,8 +423,8 @@ footer p {
     }
 
     .portada {
-        height: 250px;
-        margin-top: 8px;
+        height: 300px;
+        margin-top: 108px;
     }
 
     /* Section-Info */
